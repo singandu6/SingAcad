@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SingAcad - Plateforme de formations professionnelles en programmation, maintenance informatique, sécurité et réseaux. Certifications incluses.">
+    <meta name="keywords" content="formations programmation, Python, JavaScript, Java, développement web, maintenance informatique, sécurité informatique, réseaux">
+    <meta name="author" content="SingAcad">
+    <meta property="og:title" content="SingAcad | Formations Professionnelles en Informatique">
+    <meta property="og:description" content="Apprenez la programmation, maintenance informatique et sécurité avec certifications professionnelles">
+    <title>SingAcad | Formations Professionnelles en Informatique</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>SingAcad</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#formations">Formations</a></li>
+                <li><a href="#domaines">Domaines</a></li>
+                <li><a href="#certification">Certificats</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-background">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="title-main">Formations Professionnelles <span class="highlight">en Informatique</span></h1>
+            <p class="subtitle">Apprenez la programmation, maintenance informatique, sécurité et réseaux avec certifications reconnues</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('formations')">Découvrir les formations</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('domaines')">Voir les domaines</button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3>50+</h3>
+                    <p>Formations disponibles</p>
+                </div>
+                <div class="stat">
+                    <h3>10K+</h3>
+                    <p>Étudiants certifiés</p>
+                </div>
+                <div class="stat">
+                    <h3>100%</h3>
+                    <p>Taux de réussite</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formations Section -->
+    <section id="formations" class="formations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Formations Principales</h2>
+                <p>Des parcours structurés du débutant à l'avancé</p>
+            </div>
+
+            <div class="formation-tabs">
+                <button class="tab-btn active" onclick="showTab('web')">🌐 Web</button>
+                <button class="tab-btn" onclick="showTab('backend')">⚙️ Backend</button>
+                <button class="tab-btn" onclick="showTab('mobile')">📱 Mobile</button>
+                <button class="tab-btn" onclick="showTab('maintenance')">🔧 Maintenance</button>
+            </div>
+
+            <!-- Tab Web -->
+            <div id="web" class="tab-content active">
+                <div class="formations-grid">
+                    <div class="formation-card">
+                        <div class="niveau-badge">Débutant</div>
+                        <h3><i class="fab fa-html5"></i> HTML & CSS</h3>
+                        <p>Les fondamentaux du web : structure HTML et stylisation CSS</p>
+                        <div class="contenu-formation">
+                            <h4>📚 Contenu :</h4>
+                            <ul>
+                                <li>Structure d'une page web</li>
+                                <li>Balises HTML essentielles</li>
+                                <li>Stylisation CSS</li>
+                                <li>Responsive design</li>
+                                <li>Exemple : Créer un portfolio</li>
+                            </ul>
+                        </div>
+                        <div class="formation-footer">
+                            <span class="duree">⏱️ 20h</span>
+                            <span class="niveau-progress">Level: 1/3</span>
+                        </div>
+                        <button class="btn btn-small">Commencer</button>
+                    </div>
+
+                    <div class="formation-card">
+                        <div class="niveau-badge">Débutant</div>
+                        <h3><i class="fab fa-js"></i> JavaScript Débutant</h3>
+                        <p>Introduction à la programmation avec JavaScript</p>
+                        <div class="contenu-formation">
+                            <h4>📚 Contenu :</h4>
+                            <ul>
+                                <li>Variables et types de données</li>
+                                <li>Conditions et boucles</li>
+                                <li>Fonctions</li>
+                                <li>Manipulation du DOM</li>
+                                <li>Exemple : Calculatrice interactive</li>
+                            </ul>
+                        </div>
+                        <div class="formation-footer">
+                            <span class="duree">⏱️ 25h</span>
+                            <span class="niveau-progress">Level: 1/3</span>
+                        </div>
+                        <button class="btn btn-small">Commencer</button>
+                    </div>
+
+                    <div class="formation-card">
+                        <div class="niveau-badge niveau-moyen">Moyen</div>
+                        <h3><i class="fab fa-js"></i> JavaScript Intermédiaire</h3>
+                        <p>Approfondissez avec les concepts avancés</p>
+                        <div class="contenu-formation">
+                            <h4>📚 Contenu :</h4>
+                            <ul>
+                                <li>Asynchrone & Promises</li>
+                                <li>Fetch API</li>
+                                <li>ES6+ features</li>
+                                <li>Gestion d'erreurs</li>
+                                <li>Exemple : Météo en temps réel</li>
+                            </ul>
+                        </div>
+                        <div class="formation-footer">
+                            <span class="duree">⏱️ 30h</span>
+                            <span class="niveau-progress">Level: 2/3</span>
+                        </div>
+                        <button class="btn btn-small">Commencer</button>
+                    </div>
+
+                    <div class="formation-card">
+                        <div class="niveau-badge niveau-avance">Avancé</div>
+                        <h3><i class="fab fa-react"></i> React.js</h3>
+                        <p>Développement d'applications modernes</p>
+                        <div class="contenu-formation">
+                            <h4>📚 Contenu :</h4>
+                            <ul>
+                                <li>Composants React</li>
+                                <li>Hooks et State Management</li>
+                                <li>Routing avec React Router</li>
+                                <li>Performance optimization</li>
+                                <li>Exemple : E-commerce complet</li>
+                            </ul>
+                        </div>
+                        <div class="formation-footer">
+                            <span class="duree">⏱️ 35h</span>
+                            <span class="niveau-progress">Level: 3/3</span>
+                        </div>
+                        <button class="btn btn-small">Commencer</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Backend -->
+            <div id="backend" class="tab-content">
+                <div class="formations-grid">
+                    <div class="formation-card">
+                        <div class="niveau-badge">Débutant</div>
+                        <h3><i class="fab fa-python"></i> Python Débutant</h3>
+                        <p>Fondamentaux de la programmation avec Python</p>
+                        <div class="contenu-formation">
+                            <h4>📚 Contenu :</h4>
+                            <ul>
+                                <li>Syntaxe Python</li>
+                                <li>Structures de données</li>
+                                <li>Boucles et conditions</li>
+                                <li>Fonctions et modules</li>
+                                <li>Exemple : Gestion d'une bibliothèque</li>
+                            </ul>
+                        </div>
+                        <div class="formation-footer">
+                            <span class="duree">⏱️ 30h</span>
+                            <span class="niveau-progress">Level: 1/3</span>
+                        </div>
+                        <button class="btn btn-small">Commencer</button>
+                    </div>
+
+                    <div class="formation-card">
+                        <div class="niveau-badge niveau-moyen">Moyen</div>
+                        <h3><i class="fab fa-python"></i> Python Intermédiaire</h3>
+                        <p>Programmation orientée objet et bases de données</p>
+                        <div class="contenu-formation">
+                            <h4>📚 Contenu :</h4>
+                            <ul>
+                                <li>POO (Classes, Héritage)</li>
+                                <li>Bases de données SQL</li>
+                                <li>Flask/Django intro</li>
+                                <li>Gestion d'erreurs</li>
+                                <li>Exemple : API REST simple</li>
+                            </ul>
+                        </div>
+                        <div class="formation-footer">
+                            <span class="duree">⏱️ 35h</span>
+                            <span class="niveau-progress">Level: 2/3</span>
+                        </div>
+                        <button class="btn btn-small">Commencer</button>
+                    </div>
+
+                    <div class="formation-card">
+                        <div class="niveau-badge">Débutant</div>
+                        <h3><i class="fab fa-java"></i> Java Débutant</h3>
+                        <p>Programmation objet avec Java</p>
+                        <div class="contenu-formation">
+                            <h4>📚 Contenu :</h4>
+                            <ul>
+                                <li>Syntaxe Java</li>
+                                <li>Programmation objet</li>
+                                <li>Collections</li>
+                                <li>Gestion des exceptions</li>
+                                <li>Exemple : Jeu de cartes</li>
+                            </ul>
+                        </div>
+                        <div class="formation-footer">
+                            <span class="duree">⏱️ 32h</span>
+                            <span class="niveau-progress">Level: 1/3</span>
+                        </div>
+                        <button class="btn btn-small">Commencer</button>
+                    </div>
+
+                    <div class="formation-card">
+                        <div class="niveau-badge">Débutant</div>
+                        <h3><i class="fas fa-database"></i> Bases de Données SQL</h3>
+                        <p>Maîtriser les données et SQL</p>
+                        <div class="contenu-formation">
+                            <h4>📚 Contenu :</h4>
+                            <ul>
+                                <li>Concepts des BD</li>
+                                <li>SQL SELECT, INSERT, UPDATE</li>
+                                <li>Jointures et agrégations</li>
+                                <li>Normalisation</li>
+                                <li>Exemple : Gestion d'école</li>
+                            </ul>
+                        </div>
+                        <div class="formation-footer">
+                            <span class="duree">⏱️ 25h</span>
+                            <span class="niveau-progress">Level: 1/3</span>
+                        </div>
+                        <button class="btn btn-small">Commencer</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Mobile -->
+            <div id="mobile" class="tab-content">
+                <div class="formations-grid">
+                    <div class="formation-card">
+                        <div class="niveau-badge niveau-moyen">Moyen</div>
+                        <h3><i class="fab fa-react"></i> React Native</h3>
+                        <p>Développement mobile multiplateforme</p>
+                        <div class="contenu-formation">
+                            <h4>📚 Contenu :</h4>
+                            <ul>
+                                <li>Concepts React Native</li>
+                                <li>Composants mobiles</li>
+                                <li>Navigation</li>
+                                <li>API natives</li>
+                                <li>Exemple : App de TODO</li>
+                            </ul>
+                        </div>
+                        <div class="formation-footer">
+                            <span class="duree">⏱️ 35h</span>
+                            <span class="niveau-progress">Level: 2/3</span>
+                        </div>
+                        <button class="btn btn-small">Commencer</button>
+                    </div>
+
+                    <div class="formation-card">
+                        <div class="niveau-badge niveau-moyen">Moyen</div>
+                        <h3><i class="fas fa-mobile-alt"></i> Flutter</h3>
+                        <p>Développement mobile avec Flutter et Dart</p>
+                        <div class="contenu-formation">
+                            <h4>📚 Contenu :</h4>
+                            <ul>
+                                <li>Dart fundamentals</li>
+                                <li>Widgets Flutter</li>
+                                <li>State management</li>
+                                <li>Intégration API</li>
+                                <li>Exemple : App météo</li>
+                            </ul>
+                        </div>
+                        <div class="formation-footer">
+                            <span class="duree">⏱️ 35h</span>
+                            <span class="niveau-progress">Level: 2/3</span>
+                        </div>
+                        <button class="btn btn-small">Commencer</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Maintenance -->
+            <div id="maintenance" class="tab-content">
+                <div class="formations-grid">
+                    <div class="formation-card">
+                        <div class="niveau-badge">Débutant</div>
+                        <h3><i class="fas fa-tools"></i> Maintenance Informatique</h3>
+                        <p>Dépannage et maintenance des systèmes</p>
+                        <div class="contenu-formation">
+                            <h4>📚 Contenu :</h4>
+                            <ul>
+                                <li>Diagnostic des pannes</li>
+                                <li>Optimisation système</li>
+                                <li>Logiciels malveillants</li>
+                                <li>Sauvegarde & restauration</li>
+                                <li>Exemple : Réparer un PC lent</li>
+                            </ul>
+                        </div>
+                        <div class="formation-footer">
+                            <span class="duree">⏱️ 20h</span>
+                            <span class="niveau-progress">Level: 1/3</span>
+                        </div>
+                        <button class="btn btn-small">Commencer</button>
+                    </div>
+
+                    <div class="formation-card">
+                        <div class="niveau-badge">Débutant</div>
+                        <h3><i class="fas fa-shield-alt"></i> Sécurité Informatique</h3>
+                        <p>Protégez vos systèmes et données</p>
+                        <div class="contenu-formation">
+                            <h4>📚 Contenu :</h4>
+                            <ul>
+                                <li>Concepts sécurité</li>
+                                <li>Antivirus & pare-feu</li>
+                                <li>Cryptage de données</li>
+                                <li>Bonnes pratiques</li>
+                                <li>Exemple : Sécuriser votre PC</li>
+                            </ul>
+                        </div>
+                        <div class="formation-footer">
+                            <span class="duree">⏱️ 22h</span>
+                            <span class="niveau-progress">Level: 1/3</span>
+                        </div>
+                        <button class="btn btn-small">Commencer</button>
+                    </div>
+
+                    <div class="formation-card">
+                        <div class="niveau-badge">Débutant</div>
+                        <h3><i class="fas fa-network-wired"></i> Réseaux Informatiques</h3>
+                        <p>Fondamentaux des réseaux</p>
+                        <div class="contenu-formation">
+                            <h4>📚 Contenu :</h4>
+                            <ul>
+                                <li>Modèle OSI</li>
+                                <li>Protocoles TCP/IP</li>
+                                <li>Configuration réseau</li>
+                                <li>Routage & switching</li>
+                                <li>Exemple : Configurer WiFi</li>
+                            </ul>
+                        </div>
+                        <div class="formation-footer">
+                            <span class="duree">⏱️ 24h</span>
+                            <span class="niveau-progress">Level: 1/3</span>
+                        </div>
+                        <button class="btn btn-small">Commencer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domaines Section -->
+    <section id="domaines" class="domaines">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Domaines d'Expertise</h2>
+                <p>Maîtrisez les compétences informatiques essentielles</p>
+            </div>
+
+            <div class="domaines-grid">
+                <div class="domaine-card">
+                    <div class="domaine-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programmation Web</h3>
+                    <p>HTML, CSS, JavaScript, React, Vue, Angular</p>
+                    <ul class="domaine-features">
+                        <li>✓ Frontend moderne</li>
+                        <li>✓ Responsive design</li>
+                        <li>✓ Frameworks populaires</li>
+                        <li>✓ Projets réels</li>
+                    </ul>
+                </div>
+
+                <div class="domaine-card">
+                    <div class="domaine-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Programmation Backend</h3>
+                    <p>Python, Java, Node.js, Bases de données</p>
+                    <ul class="domaine-features">
+                        <li>✓ APIs REST</li>
+                        <li>✓ POO avancée</li>
+                        <li>✓ Bases de données SQL</li>
+                        <li>✓ Déploiement</li>
+                    </ul>
+                </div>
+
+                <div class="domaine-card">
+                    <div class="domaine-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Développement Mobile</h3>
+                    <p>React Native, Flutter, iOS, Android</p>
+                    <ul class="domaine-features">
+                        <li>✓ Apps multiplateforme</li>
+                        <li>✓ Interfaces intuitives</li>
+                        <li>✓ Gestion d'état</li>
+                        <li>✓ Publication app store</li>
+                    </ul>
+                </div>
+
+                <div class="domaine-card">
+                    <div class="domaine-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maintenance Informatique</h3>
+                    <p>Dépannage, Optimisation, Support technique</p>
+                    <ul class="domaine-features">
+                        <li>✓ Diagnostic avancé</li>
+                        <li>✓ Optimisation système</li>
+                        <li>✓ Gestion des pannes</li>
+                        <li>✓ Support client</li>
+                    </ul>
+                </div>
+
+                <div class="domaine-card">
+                    <div class="domaine-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Sécurité Informatique</h3>
+                    <p>Cryptage, Protection données, Cybersécurité</p>
+                    <ul class="domaine-features">
+                        <li>✓ Audit sécurité</li>
+                        <li>✓ Prévention menaces</li>
+                        <li>✓ Récupération crise</li>
+                        <li>✓ Normes compliance</li>
+                    </ul>
+                </div>
+
+                <div class="domaine-card">
+                    <div class="domaine-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Réseaux Informatiques</h3>
+                    <p>TCP/IP, Configuration, Administration réseau</p>
+                    <ul class="domaine-features">
+                        <li>✓ Modèle OSI</li>
+                        <li>✓ Routage avancé</li>
+                        <li>✓ WiFi 6</li>
+                        <li>✓ VPN & sécurité</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Section -->
+    <section id="certification" class="certification">
+        <div class="container">
+            <div class="section-header">
+                <h2>Certificats Professionnels</h2>
+                <p>Obtenez des certifications reconnues</p>
+            </div>
+
+            <div class="certification-grid">
+                <div class="cert-card">
+                    <div class="cert-badge">CERTIFIÉ</div>
+                    <i class="fas fa-certificate"></i>
+                    <h3>Développeur Web</h3>
+                    <p>HTML • CSS • JavaScript • React</p>
+                    <div class="cert-requirements">
+                        <h4>Conditions :</h4>
+                        <ul>
+                            <li>✓ 4 formations complétées</li>
+                            <li>✓ 15+ exercices réussis</li>
+                            <li>✓ Projet portfolio validé</li>
+                            <li>✓ Examen final réussi</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-badge">CERTIFIÉ</div>
+                    <i class="fas fa-certificate"></i>
+                    <h3>Développeur Backend</h3>
+                    <p>Python • Java • SQL • API REST</p>
+                    <div class="cert-requirements">
+                        <h4>Conditions :</h4>
+                        <ul>
+                            <li>✓ 4 formations complétées</li>
+                            <li>✓ 12+ exercices réussis</li>
+                            <li>✓ Projet API validé</li>
+                            <li>✓ Examen final réussi</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-badge">CERTIFIÉ</div>
+                    <i class="fas fa-certificate"></i>
+                    <h3>Développeur Mobile</h3>
+                    <p>React Native • Flutter • Dart</p>
+                    <div class="cert-requirements">
+                        <h4>Conditions :</h4>
+                        <ul>
+                            <li>✓ 2 formations complétées</li>
+                            <li>✓ 10+ exercices réussis</li>
+                            <li>✓ Application complète</li>
+                            <li>✓ Examen final réussi</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-badge">CERTIFIÉ</div>
+                    <i class="fas fa-certificate"></i>
+                    <h3>Technicien IT</h3>
+                    <p>Maintenance • Sécurité • Réseaux</p>
+                    <div class="cert-requirements">
+                        <h4>Conditions :</h4>
+                        <ul>
+                            <li>✓ 3 formations complétées</li>
+                            <li>✓ 12+ exercices réussis</li>
+                            <li>✓ Cas pratiques résolus</li>
+                            <li>✓ Examen final réussi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercices Section -->
+    <section class="exercices">
+        <div class="container">
+            <div class="section-header">
+                <h2>Exercices Pratiques</h2>
+                <p>Apprenez en faisant avec correction automatique</p>
+            </div>
+
+            <div class="exercices-showcase">
+                <div class="exercice-item">
+                    <h3>🏫 Exercices Interactifs</h3>
+                    <p>Codez directement dans votre navigateur avec éditeur intégré</p>
+                    <ul>
+                        <li>✓ Correction en temps réel</li>
+                        <li>✓ Feedback instantané</li>
+                        <li>✓ Plusieurs tentatives</li>
+                        <li>✓ Solutions fournies</li>
+                    </ul>
+                </div>
+
+                <div class="exercice-item">
+                    <h3>📋 Projets Capstone</h3>
+                    <p>Construisez des projets réels du début à la fin</p>
+                    <ul>
+                        <li>✓ Portfolio à constituer</li>
+                        <li>✓ Mentoring inclus</li>
+                        <li>✓ Code review professionnel</li>
+                        <li>✓ Déploiement guidé</li>
+                    </ul>
+                </div>
+
+                <div class="exercice-item">
+                    <h3>🧠 Quiz & Tests</h3>
+                    <p>Validez votre compréhension régulièrement</p>
+                    <ul>
+                        <li>✓ Questions variées</li>
+                        <li>✓ Explications détaillées</li>
+                        <li>✓ Progression suivie</li>
+                        <li>✓ Certificat progressif</li>
+                    </ul>
+                </div>
+
+                <div class="exercice-item">
+                    <h3>🎓 Cas d'Étude</h3>
+                    <p>Résolvez des problèmes inspirés de la vie réelle</p>
+                    <ul>
+                        <li>✓ Scénarios authentiques</li>
+                        <li>✓ Solutions multiples</li>
+                        <li>✓ Best practices</li>
+                        <li>✓ Débriefing vidéo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Démarrez Votre Apprentissage</h2>
+                <p>Inscrivez-vous pour accéder à toutes les formations</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>support@singacad.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+33 1 XX XX XX XX</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Localisation</h4>
+                            <p>Paris, France</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Domaine d'intérêt</option>
+                            <option value="web">Programmation Web</option>
+                            <option value="backend">Backend</option>
+                            <option value="mobile">Développement Mobile</option>
+                            <option value="maintenance">Maintenance IT</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Votre message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">M'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SingAcad</h4>
+                    <p>Plateforme de formations professionnelles en informatique</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Formations</h4>
+                    <ul>
+                        <li><a href="#">Programmation Web</a></li>
+                        <li><a href="#">Backend</a></li>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">Conditions</a></li>
+                        <li><a href="#">Confidentialité</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SingAcad. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
